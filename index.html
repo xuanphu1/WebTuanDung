@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chậu Cây Thông Minh - Đo Độ Ẩm Tự Động</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌲 Chậu Cây Thông Minh</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Chậu Cây Thông Minh</h1>
+                <p class="hero-subtitle">Tự động đo độ ẩm - Hiển thị trực quan - Chăm sóc cây dễ dàng</p>
+                <a href="#order" class="btn btn-primary btn-large">Đặt Hàng Ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-showcase">
+                <div class="product-image">
+                    <div class="main-image">
+                        <img id="mainImage" src="images/anh1.jpg" alt="Sản phẩm" onerror="this.src='https://via.placeholder.com/600x600/6366f1/ffffff?text=Hinh+Anh+1'">
+                    </div>
+                    <div class="image-gallery">
+                        <div class="thumbnail active" onclick="changeMainImage(0)">
+                            <img src="images/anh1.jpg" alt="Ảnh 1" onerror="this.src='https://via.placeholder.com/150x150/6366f1/ffffff?text=1'">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage(1)">
+                            <img src="images/anh2.jpg" alt="Ảnh 2" onerror="this.src='https://via.placeholder.com/150x150/f59e0b/ffffff?text=2'">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage(2)">
+                            <img src="images/anh3.jpg" alt="Ảnh 3" onerror="this.src='https://via.placeholder.com/150x150/10b981/ffffff?text=3'">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage(3)">
+                            <img src="images/anh4.jpg" alt="Ảnh 4" onerror="this.src='https://via.placeholder.com/150x150/ef4444/ffffff?text=4'">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Chậu Cây Thông Minh</h2>
+                    <div class="product-price">
+                        <span class="price-old">1,500,000₫</span>
+                        <span class="price-new">999,000₫</span>
+                    </div>
+                    <div class="product-description">
+                        <h3>Mô tả sản phẩm:</h3>
+                        <p><strong>Chậu Cây Thông Minh</strong> - Giải pháp hoàn hảo cho những người yêu cây nhưng chưa có kinh nghiệm chăm sóc. Sản phẩm tích hợp công nghệ cảm biến độ ẩm thông minh, giúp bạn luôn biết khi nào cây cần nước.</p>
+                        
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-color);">🌱 Tính năng nổi bật:</h4>
+                        <ul>
+                            <li>✅ <strong>Cảm biến độ ẩm tự động:</strong> Đo độ ẩm đất liên tục và chính xác</li>
+                            <li>✅ <strong>Hiển thị trực quan:</strong> Hình ảnh LED đổi màu theo mức độ ẩm (Xanh = Đủ nước, Vàng = Cần tưới, Đỏ = Thiếu nước nghiêm trọng)</li>
+                            <li>✅ <strong>Thiết kế hiện đại:</strong> Chậu đẹp mắt, phù hợp mọi không gian</li>
+                            <li>✅ <strong>Dễ sử dụng:</strong> Không cần cài đặt phức tạp, chỉ cần cắm pin</li>
+                            <li>✅ <strong>Tiết kiệm nước:</strong> Chỉ tưới khi cần thiết, tránh lãng phí</li>
+                            <li>✅ <strong>Bảo vệ cây:</strong> Ngăn ngừa tình trạng úng nước hoặc thiếu nước</li>
+                        </ul>
+                        
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-color);">📐 Thông số kỹ thuật:</h4>
+                        <ul>
+                            <li>📏 Kích thước: 20cm x 20cm x 18cm</li>
+                            <li>⚖️ Trọng lượng: 800g</li>
+                            <li>🔋 Pin: 2 pin AA (dùng được 3-6 tháng)</li>
+                            <li>💧 Dung tích chứa: 2.5 lít</li>
+                            <li>🎨 Chất liệu: Nhựa ABS cao cấp, chống nước</li>
+                            <li>🌡️ Dải đo độ ẩm: 0-100%</li>
+                        </ul>
+                        
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-color);">🎯 Đối tượng sử dụng:</h4>
+                        <ul>
+                            <li>👨‍💼 Người bận rộn, không có thời gian chăm sóc cây</li>
+                            <li>🌿 Người mới bắt đầu trồng cây</li>
+                            <li>🏢 Văn phòng, không gian làm việc</li>
+                            <li>🏠 Gia đình yêu thích cây cảnh</li>
+                        </ul>
+                        
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-color);">🛡️ Bảo hành:</h4>
+                        <p>Bảo hành 12 tháng, đổi mới trong 30 ngày đầu nếu có lỗi kỹ thuật.</p>
+                    </div>
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🚚</span>
+                            <span>Giao hàng nhanh</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💳</span>
+                            <span>Thanh toán an toàn</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔄</span>
+                            <span>Đổi trả dễ dàng</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⭐</span>
+                            <span>Chất lượng đảm bảo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title">Đặt Hàng Ngay</h2>
+            <div class="order-form-wrapper">
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="customerName">Họ và tên *</label>
+                        <input type="text" id="customerName" name="name" required placeholder="Nhập họ và tên của bạn">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerPhone">Số điện thoại *</label>
+                        <input type="tel" id="customerPhone" name="phone" required placeholder="Nhập số điện thoại">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" name="email" placeholder="Nhập email (không bắt buộc)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerAddress">Địa chỉ giao hàng *</label>
+                        <textarea id="customerAddress" name="address" required rows="3" placeholder="Nhập địa chỉ chi tiết"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Số lượng</label>
+                        <div class="quantity-selector">
+                            <button type="button" class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" readonly>
+                            <button type="button" class="qty-btn" onclick="changeQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="note">Ghi chú</label>
+                        <textarea id="note" name="note" rows="3" placeholder="Ghi chú thêm (nếu có)"></textarea>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <div class="summary-row">
+                            <span>Đơn giá:</span>
+                            <span id="unitPrice">999,000₫</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Số lượng:</span>
+                            <span id="qtyDisplay">1</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Phí vận chuyển:</span>
+                            <span>30,000₫</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Tổng cộng:</span>
+                            <span id="totalPrice">1,029,000₫</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block btn-large">
+                        Đặt Hàng Ngay
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">✅</div>
+            <h2>Đặt hàng thành công!</h2>
+            <p>Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+            <button onclick="closeModal()" class="btn btn-primary">Đóng</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Chậu Cây Thông Minh. Tất cả quyền được bảo lưu.</p>
+            <p class="footer-contact">
+                📞 Hotline: <a href="tel:0123456789">0123 456 789</a> | 
+                📧 Email: <a href="mailto:your@email.com">your@email.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
